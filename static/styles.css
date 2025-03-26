@@ -1,0 +1,134 @@
+/* style.css */
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin-top: 50px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header Section */
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Textarea */
+textarea {
+    width: 92%;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-success, .btn-primary {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Table Styling */
+.table-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.table thead {
+    background-color: #4caf50;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Alert Styling */
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.card-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+}

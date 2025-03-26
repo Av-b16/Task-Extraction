@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Extraction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">📋 Extracted Tasks</h2>
+        {% if tasks %}
+            <div class="row">
+                {% for task in tasks %}
+                <div class="col-md-6 mb-3">
+                    <div class="card task-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Task: {{ task['task'] }}</h5>
+                            <p class="card-text"><strong>Person:</strong> {{ task['person'] }}</p>
+                            <p class="card-text"><strong>Deadline:</strong> {{ task['deadline'] }}</p>
+                            <p class="card-text"><strong>Category:</strong> {{ task['category'] }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="text-center">⚠️ No tasks found. Please try again!</p>
+        {% endif %}
+        <div class="text-center mt-3">
+            <a href="/" class="btn btn-secondary">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>
